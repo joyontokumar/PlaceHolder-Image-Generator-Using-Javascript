@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Generator</title>
+</head>
+
+<body>
+    <div id="wrapper">Placeholder Image Generator</div>
+    <form>
+        <select onchange="imgU()">
+        <option value="">Select</option>
+        <option value="150x150">Small</option>
+        <option value="350x150">Medium</option>
+        <option value="750x150">Large</option>
+      </select>
+        <br /> Add Text
+        <input type="text" onchange="imgU()" />
+        <br /> Select Color
+        <input type="color" onchange="imgU()" />
+        <br />
+        <img src="http://via.placeholder.com/350x150/222/fff?text=Image1" id="myImage" />
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
